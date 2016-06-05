@@ -22,23 +22,40 @@
 
 
 /*ここからアニメーションコード*/
-@include keyframes(animationSample){
+@include keyframes(LoadFinishAnimation1){
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@include keyframes(LoadFinishAnimation2){
     0% {
+        -webkit-transform: scale(0,0);
+           -moz-transform: scale(0,0);
+            -ms-transform: scale(0,0);
+             -o-transform: scale(0,0);
+                transform: scale(0,0);
+    }
+    100% {
         -webkit-transform: scale(1,1);
            -moz-transform: scale(1,1);
             -ms-transform: scale(1,1);
              -o-transform: scale(1,1);
                 transform: scale(1,1);
     }
-    100% {
-        -webkit-transform: scale(0.5,0.5);
-           -moz-transform: scale(0.5,0.5);
-            -ms-transform: scale(0.5,0.5);
-             -o-transform: scale(0.5,0.5);
-                transform: scale(0.5,0.5);
-    }
 }
 
-.LoadingItems{
-    @include animation(animationSample 1.5s ease 0s infinite alternate);
+#Content1Header1{
+    @include animation(LoadFinishAnimation1 1s ease 0s);
+}
+
+#Content1Header2{
+    @include animation(LoadFinishAnimation1 1s ease 0.5s);
+}
+
+#Content1HeaderSlashBox{
+    @include animation(LoadFinishAnimation2 1.5s ease 1s);
 }
