@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "input.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "jquery": "^2.2.3",
+    "node-sass": "^3.7.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "vue": "^1.0.24",
+    "webpack": "^1.13.0"
+  }
+}

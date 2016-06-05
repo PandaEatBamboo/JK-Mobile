@@ -1,0 +1,44 @@
+/*アニメーション設定*/
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($animation-name) {
+  -webkit-animation: #{$animation-name};
+  -moz-animation: #{$animation-name};
+  animation: #{$animation-name};
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+/*ここからアニメーションコード*/
+@include keyframes(animationSample){
+    0% {
+        -webkit-transform: scale(1,1);
+           -moz-transform: scale(1,1);
+            -ms-transform: scale(1,1);
+             -o-transform: scale(1,1);
+                transform: scale(1,1);
+    }
+    100% {
+        -webkit-transform: scale(0.5,0.5);
+           -moz-transform: scale(0.5,0.5);
+            -ms-transform: scale(0.5,0.5);
+             -o-transform: scale(0.5,0.5);
+                transform: scale(0.5,0.5);
+    }
+}
+
+.LoadingItems{
+    @include animation(animationSample 1.5s ease 0s infinite alternate);
+}
