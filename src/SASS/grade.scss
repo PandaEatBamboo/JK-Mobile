@@ -54,6 +54,14 @@ $skyblue: rgb(99,197,206);
   @include gradient($pink, $skyblue, horizontal);
 }
 
+#Content5HeaderBorderTop{
+  @include gradient($pink, $skyblue, horizontal);
+}
+
+#Content7HeaderBorderTop{
+  @include gradient($pink, $skyblue, horizontal);
+}
+
 #Content4SendBtn{
   @include gradient($pink, $skyblue, horizontal);
 }
