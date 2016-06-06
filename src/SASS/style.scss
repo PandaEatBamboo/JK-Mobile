@@ -12,6 +12,14 @@ body,html{
 	font-weight: 100;
 }
 
+button{
+	background: none;
+	border: none;
+	letter-spacing: 2px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 100;
+}
+
 .Contents{
 	width: 100%;
 	height: 100%;
@@ -29,12 +37,13 @@ body,html{
 
 	#Content1{
 		color: #FFF;
+		height: calc(100% - 1px);
 	}
 
 	#Content1Logo{
 		width: 500px;
 		position: absolute;
-		bottom: 53%;
+		bottom: 55%;
 		left: calc(50% - 250px);
 	}
 
@@ -42,7 +51,18 @@ body,html{
 		width: 100%;
 		text-align: center;
 		position: absolute;
-		top: 53%;
+		top: 47%;
+	}
+
+	#Content1Btn{
+		width: 230px;
+		height: 50px;
+		position: absolute;
+		top: calc(45% + 100px);
+		left: calc(50% - 115px);
+		font-size: 15px;
+		font-weight: 200;
+		color: #FFF;
 	}
 
 	#Content1HeaderBottomArrow{
@@ -68,8 +88,156 @@ body,html{
 /****Content2****/
 
 	#Content2{
+		height: auto;
 		border-top: 1px solid $skyblue;
-		background: rgb(10,10,20);
+		border-bottom: 1px solid $pink;
+		background: rgb(20,20,30);
+	}
+
+	#Content2Left{
+		width: 40%;
+		float: left;
+	}
+
+	#Content2Right{
+		width: 60%;
+		float: left;
+	}
+
+	#Content2HeaderBorderTop{
+		width: 80px;
+		height: 3px;
+		-webkit-border-radius: 10px;
+		        border-radius: 10px;
+		margin-top: 100px;
+		margin-left: 80px;
+		z-index: 3;
+	}
+
+	#Content2Header{
+		font-size: 25px;
+		color: #FFF;
+		font-weight: 200;
+		margin-left: 80px;
+		margin-top: 30px;
+		line-height: 2;
+	}
+
+	#Content2TextBox{
+		width: calc(100% - 160px);
+		margin-left: 80px;
+		font-size: 12px;
+		letter-spacing: 3px;
+		line-height: 1.5;
+		color: #ddd;
+		margin-top: 40px;
 	}
 
 /****Content2****/
+
+
+
+/****Content3****/
+
+	#Content3{
+		height: 500px;
+		background: rgba(0,0,0,0.7);
+	}
+
+	#Content3HeaderBorderTop{
+		width: 80px;
+		height: 3px;
+		-webkit-border-radius: 10px;
+		        border-radius: 10px;
+		position: relative;
+		top: 80px;
+		margin-bottom: 120px;
+		margin-left: calc(50% - 40px);
+		z-index: 3;
+	}
+
+	#Content3Header{
+		width: 100%;
+		text-align: center;
+		font-size: 25px;
+		margin-top: 40px;
+		font-weight: 200;
+		color: #FFF;
+	}
+
+	.Content3Img1{
+		width: 250px;
+		margin-top: 60px;
+		margin-left: calc((100% - 750px) / 4);
+		float: left;
+	}
+
+	.Content3Img2{
+		width: 200px;
+		margin-top: 60px;
+		margin-left: calc((100% - 800px) / 5);
+	}
+
+
+/****Content3****/
+
+
+
+/****Content4****/
+
+	#Content4{
+		height: auto;
+		background: #fff;
+	}
+
+	#Content4HeaderBorderTop{
+		width: 80px;
+		height: 3px;
+		-webkit-border-radius: 10px;
+		        border-radius: 10px;
+		position: relative;
+		top: 80px;
+		margin-bottom: 120px;
+		margin-left: calc(50% - 40px);
+		z-index: 3;
+	}
+
+	#Content4Header{
+		width: 100%;
+		text-align: center;
+		font-size: 25px;
+		margin-top: 40px;
+		font-weight: 200;
+		color: #000;
+	}
+
+	.Content4Inputs{
+		width: 850px;
+		height: 30px;
+		margin-left: calc(50% - 425px);
+		margin-right: calc(50% - 425px);
+		margin-top: 50px;
+	}
+
+	#Content4TextArea{
+		width: 850px;
+		height: 200px;
+		margin-left: calc(50% - 425px);
+		margin-right: calc(50% - 425px);
+		margin-top: 50px;
+	}
+
+	#Content4SendBtn{
+		width: 850px;
+		height: 60px;
+		margin-left: calc(50% - 425px);
+		margin-right: calc(50% - 425px);
+		margin-top: 50px;
+		margin-bottom: 150px;
+		color: #FFF;
+		font-size: 16px;
+		font-weight: 200;
+	}
+
+
+/****Content4****/

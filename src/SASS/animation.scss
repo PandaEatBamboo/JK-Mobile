@@ -57,18 +57,6 @@
   }
 }
 
-#Content1Header1{
-  @include animation(LoadFinishAnimation1 1s ease 0s);
-}
-
-#Content1Header2{
-  @include animation(LoadFinishAnimation1 1s ease 0.5s);
-}
-
-#Content1HeaderSlashBox{
-  @include animation(LoadFinishAnimation2 1.5s ease 1s);
-}
-
 #Content1HeaderBottomArrow{
   @include animation(Content1Arrow 0.8s linear 0s infinite alternate);
 }
