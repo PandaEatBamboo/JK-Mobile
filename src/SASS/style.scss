@@ -173,7 +173,7 @@ button{
 
 	#Content2{
 		height: auto;
-		background: rgb(20,20,30);
+		background: rgba(20,20,30,0.5);
 	}
 
 	#Content2Left{
@@ -278,7 +278,7 @@ button{
 
 	.ContentTextLeft{
 		width: calc(100% - 400px);
-		font-size: 12px;
+		font-size: 13px;
 		margin-top: 40px;
 		margin-left: 200px;
 	}
