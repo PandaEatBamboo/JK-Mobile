@@ -52,6 +52,9 @@ body,html{
 	font-weight: 100;
 	color: #FFF;
 	-webkit-text-size-adjust: 100%;
+	min-width:1024px;
+	-ms-overflow-x: hidden;
+	    overflow-x: hidden;
 }
 
 button{
@@ -118,14 +121,16 @@ button{
 	line-height: 3;
 }
 
+#BackImg{
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -400px;
+}
 
 /***Content1***/
 
 	#Content1{
-		background: url(../IMG/back.png);
-		-webkit-background-size: cover;
-		     -o-background-size: cover;
-		        background-size: cover;
 	}
 
 	#Content1Logo{
@@ -171,7 +176,6 @@ button{
 /***Content2***/
 
 	#Content3{
-		height: auto;
 		background: url(../IMG/back.jpg);
 		-webkit-background-size: cover;
 		     -o-background-size: cover;
@@ -181,7 +185,7 @@ button{
 	#Content3Shadow{
 		width: 100%;
 		height: auto;
-		background: rgba(0,0,0,0.8);
+		background: rgba(0,0,0,0.65);
 	}
 
 
@@ -244,16 +248,19 @@ button{
 		height: auto;
 		background: #fff;
 		color: #000;
+		font-weight: 200;
 	}
 
 	.Content6Q{
 		color: $skyblue;
 		font-size: 50px;
+		font-weight: 100;
 	}
 
 	.Content6A{
 		color: $pink;
 		font-size: 50px;
+		font-weight: 100;
 	}
 
 /***Content2***/
@@ -262,11 +269,6 @@ button{
 /***Content2***/
 
 	#Content7{
-		height: auto;
-		background: url(../IMG/back.png);
-		-webkit-background-size: cover;
-		     -o-background-size: cover;
-		        background-size: cover;
 	}
 
 	.Content7Img{
@@ -285,25 +287,29 @@ button{
 	}
 
 	.Content8Inputs{
-		width: 100%;
+		width: calc(100% - 20px);
 		height: 100px;
 		background: rgba(99,197,206,0.4);
 		color: #000;
 		margin: 0;
 		margin-top: 50px;
 		margin-bottom: 50px;
+		padding-left: 10px;
+		padding-right: 10px;
 		border: none;
 		font-size: 25px;
 		letter-spacing: 3px;
 	}
 
 	#Content8TextArea{
-		width: 100%;
+		width: calc(100% - 20px);
 		height: 500px;
 		background: rgba(99,197,206,0.4);
 		color: #000;
 		margin: 0;
 		margin-top: 50px;
+		padding-left: 10px;
+		padding-right: 10px;
 		border: none;
 		font-size: 25px;
 	}
