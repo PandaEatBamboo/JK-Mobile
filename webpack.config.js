@@ -11,7 +11,8 @@ module.exports = {
               test: /\.scss$/,
               loaders: ["style", "css", "sass"]
             },
-            { test: /\.jpg$/, loader: "url-loader?mimetype=image/jpg" }
+            { test: /\.jpg$/, loader: "url-loader?mimetype=image/jpg" },
+            { test: /\.png$/, loader: "url-loader?mimetype=image/png" }
         ]
     }
 };

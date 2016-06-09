@@ -42,30 +42,18 @@ $skyblue: rgb(99,197,206);
   @include gradient(#ff00ff, #ff00cc, vertical);
 }
 */
-#Content2HeaderBorderTop{
+.ContentsHeaderTopBorderCenter{
   @include gradient($pink, $skyblue, horizontal);
 }
 
-#Content3HeaderBorderTop{
-  @include gradient($pink, $skyblue, horizontal);
-}
-
-#Content4HeaderBorderTop{
-  @include gradient($pink, $skyblue, horizontal);
-}
-
-#Content5HeaderBorderTop{
-  @include gradient($pink, $skyblue, horizontal);
-}
-
-#Content7HeaderBorderTop{
-  @include gradient($pink, $skyblue, horizontal);
-}
-
-#Content4SendBtn{
+.ContentsHeaderTopBorderLeft{
   @include gradient($pink, $skyblue, horizontal);
 }
 
 #Content1Btn{
+  @include gradient($pink, $skyblue, horizontal);
+}
+
+#Content8SendBtn{
   @include gradient($pink, $skyblue, horizontal);
 }
